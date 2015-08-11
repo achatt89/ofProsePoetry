@@ -1,0 +1,48 @@
+<div class="row">
+    <div class "col-md-12 center-menu">
+        <ul class="nav navbar-nav">
+            <li ng-class="(controller=='equinoxCtrl')?'inlineActiveMenu':'doNothing'"><a ng-href="#/books/equinox">Equinox</a></li>
+            <li ng-class="(controller=='haikuCtrl')?'inlineActiveMenu':'doNothing'"><a ng-href="#/books/haiku">Haiku & Other Micropoetry</a></li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p>Haiku and other Micropoetry is, above all, a work of love.</p>
+        <p>Why Haiku? Why micropoems?</p>
+        <p>Because they are just the right number of words for a quick thought spill.</p>
+        <p>Because they capture a single moment, a single thought, a single emotion.</p>
+        <p>Because they can take you beyond that single moment or thought, into a deeply emotional or spiritual experience.</p>
+        <p>We are all pilgrims on the bitter-sweet journey called life. Our lives are peopled with, well…, people, events, things, thoughts, feelings, nature, and an omniscience that we sometimes connect with and sometimes don’t. Every breath is an occasion to celebrate; every moment offers a new insight. Whether we celebrate or desecrate that moment, grab the benefit of the insight or choose to remain blinkered, is entirely up to us.</p>
+        <p>Haiku and other Micropoetry may be considered the chronicle of one such life that chose joy and growth. The learning was that love is always the right choice. Love of life, love of people, love of nature, love of God - these made Haiku and the other Micropoetry happen.</p>
+        </p>
+    </div>
+</div>
+<div class="row>">
+    <hr>
+</div>
+<div class="row">
+    <div class="col-md-12 inlineActiveMenu">Excerpts</div>
+</div>
+</br>
+<div class="row">
+    <div class="col-md-12">
+        <blockquote class="blockQuoteBorderColor excerptText">
+            <p class="haikuExcerptHeading"><span class="quoteSize">&ldquo;</span>&nbsp;{{haiku.excerptHeading}}</p>
+            <p class="haikuExcerptLine">{{haiku.excerptLine1}}</p>
+            <p class="haikuExcerptLine" ng-if="haiku.excerptLine2!==''">{{haiku.excerptLine2}}&nbsp;<span class="quoteSize" ng-if="haiku.excerptLine4=='' && haiku.excerptLine3=='' && haiku.excerptLine2!=''">&rdquo;</span></p>
+            <p class="haiku.excerptLine" ng-if="haiku.excerptLine3!=''">{{haiku.excerptLine3}}&nbsp;<span class="quoteSize" ng-if="haiku.excerptLine4=='' && haiku.excerptLine3!=''">&rdquo;</span></p>
+            <p class="haiku.excerptLine" ng-if="haiku.excerptLine4!=''">{{haiku.excerptLine4}}&nbsp;<span class="quoteSize" ng-if="haiku.excerptLine4!=''">&rdquo;</span></p>
+            
+        </blockquote>
+    </div>
+</div>
+<div class="row>">
+    <hr>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p><a ng-href="{{amazonLink}}">Buy Haiku and other Micropoetry</a></p>
+    </div>
+</div>
+</br>

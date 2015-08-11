@@ -9,13 +9,13 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/angular-bootstrap-colorpicker/css/colorpicker.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="styles/plugins/bootstrap.min.css"></link>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/plugins/colorpicker.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- endbuild -->
 </head>
@@ -71,19 +71,15 @@
     </script>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-aria/angular-aria.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-messages/angular-messages.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.js"></script>
-    <script src="bower_components/angular-wysiwyg/dist/angular-wysiwyg.min.js"></script>
-    <script src="bower_components/firebase/firebase.js"></script>
-    <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="scripts/plugins/jquery.min.js"></script>
+    <script src="scripts/plugins/angular.min.js"></script>
+    <script src="scripts/plugins/bootstrap.min.js"></script>
+    <script src="scripts/plugins/angular-route.min.js"></script>
+    <script src="scripts/plugins/bootstrap-colorpicker-module.min.js"></script>
+    <script src="scripts/plugins/angular-wysiwyg.min.js"></script>
+    <script src="scripts/plugins/angular-sanitize.min.js"></script>
+    <script src="scripts/plugins/firebase.js"></script>
+    <script src="scripts/plugins/angularfire.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -92,7 +88,7 @@
     <script src="scripts/controllers/author.js"></script>
     <script src="scripts/controllers/books.js"></script>
     <script src="scripts/controllers/events.js"></script>
-    <script src="scripts/controllers/otherpublications.js"></script>
+    <script src="scripts/controllers/otherPublications.js"></script>
     <script src="scripts/controllers/readuvenate.js"></script>
     <script src="scripts/controllers/equinox.js"></script>
     <script src="scripts/controllers/haiku.js"></script>

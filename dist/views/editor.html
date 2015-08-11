@@ -1,0 +1,56 @@
+<div class="row">Title: </div>
+<div class="row">
+    <wysiwyg textarea-id="question" textarea-class="form-control" textarea-height="40px" textarea-name="textareaQuestion" textarea-required ng-model="wysiwygTitle" enable-bootstrap-title="true" textarea-menu="wysiwygTitleMenu"></wysiwyg>
+</div>
+</br>
+<div class="row">Excerpt: </div>
+<div class="row">
+    <textarea class="articleExcerptArea" textarea-height="80px" ng-model="articleExcerpt"></textarea>
+</div>
+</br>
+<div class="row">Body: </div>
+<div class="row">
+    <wysiwyg textarea-id="question" textarea-class="form-control" textarea-height="450px" textarea-name="textareaQuestion" textarea-required ng-model="wysiwygBody" enable-bootstrap-title="true" textarea-menu="wysiwygBodyMenu"></wysiwyg>
+</div>
+</br>
+<div class="row">
+    <button type="submit" class="btn btn-success" ng-click="submit()">Submit</button>
+    <button class="btn btn-danger" type="reset" ng-click="reset()">Reset</button>
+</div>
+</br>
+<!-- Modal -->
+<div class="modal fade" id="confirmModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Confirmation</h4>
+            </div>
+            <div class="modal-body">
+                <p class="success">Post Successfully Submitted</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="errorModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Error</h4>
+            </div>
+            <div class="modal-body">
+                <p class="danger">Please fill all the fields before submitting.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

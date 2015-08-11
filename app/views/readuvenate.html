@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-8 verticalDivider" ng-if="articleIndex!=null || articleIndex!=undefined">
+        <div class="readuvenateTitle" ng-bind-html="readuvenate[articleIndex].title"></div>
+        </br>
+        <div ng-bind-html="readuvenate[articleIndex].body"></div>
+    </div>
+    <div class="col-md-8 verticalDivider" ng-if="articleIndex==null || articleIndex==undefined">
+        <div class="readuvenateTitle" ng-bind-html="latestPost[0].title"></div>
+        </br>
+        <div ng-bind-html="latestPost[0].body"></div>
+    </div>
+    <div class="col-md-4">
+        <h4>Archieves</h4>
+        <ul>
+            <li ng-repeat="msg in readuvenate" ng-click="archieveIndex($index)">
+                <div ng-bind-html="readuvenate[$index].title"></div>
+            </li>
+        </ul>
+    </div>
+</div>

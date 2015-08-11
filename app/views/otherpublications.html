@@ -1,0 +1,18 @@
+<div class="row">
+    The table lists below the list of publications
+</div>
+</br>
+<div class="row">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="linkDetails in links">
+                <td><a ng-href="{{linkDetails.link}}">{{linkDetails.link}}</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

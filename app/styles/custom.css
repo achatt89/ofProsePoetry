@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+.indexPageTitleText {
+    font-family: 'Shadows Into Light', cursive;
+    color: brown !important;
+}
+
+.indexPageHeadingText {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.center-menu {
+    width: 42%;
+    margin: 0 auto;
+}
+
+.inlineActiveMenu {
+    text-decoration: underline;
+}
+
+.excerptText {
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px !important;
+    line-height: 1.42857143;
+    color: #333;
+    text-align: left;
+}
+
+.quoteSize {
+    font-size: 18px !important;
+    line-height: 1.42857143;
+    font-weight: bold;
+}
+
+.blockQuoteBorderColor {
+    border-color: cornflowerblue;
+}
+
+.haikuExcerptHeading {
+    font-weight: bold !important;
+}
+
+.haikuExcerptLine {
+    font-style: italic;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.readuvenateBlockQuoteBorderColor {
+    border-color: burlywood;
+}
+
+blockquote.readuvenateBlockQuoteBorderColor:hover {
+    background-color: burlywood;
+    opacity: .8;
+    color: white !important;
+}
+
+.eventsBlockQuoteBorderColor {
+    border-color: brown;
+}
+
+blockquote.eventsBlockQuoteBorderColor:hover {
+    background-color: brown;
+    opacity: .8;
+    color: white !important;
+}
+
+.haikuBlockQuoteBorderColor {
+    border-color: chocolate;
+}
+
+blockquote.haikuBlockQuoteBorderColor:hover {
+    background-color: chocolate;
+    opacity: .8;
+    color: white !important;
+}
+
+.equinoxBlockQuoteBorderColor {
+    border-color: crimson;
+}
+
+blockquote.equinoxBlockQuoteBorderColor:hover {
+    background-color: crimson;
+    opacity: .8;
+    color: white !important;
+}
+
+.linkNoTextDecoration {
+    text-decoration: none !important;
+    color: #333;
+}
+
+.blockElement {
+    display: block;
+}
+
+.verticalDivider {
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #e5e5e5;
+}
+
+.readuvenateTitle {
+    font-size: 18px;
+}
+
+.readuvenateExcerpt {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 518px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px !important;
+}
+.articleExcerptArea {
+    width: 730px;
+}

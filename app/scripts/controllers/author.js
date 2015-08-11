@@ -8,12 +8,7 @@
  * Controller of the madhuriMaitraApp
  */
 angular.module('madhuriMaitraApp')
-    .controller('authorCtrl', function($scope, $location, $rootScope) {
-        $scope.awesomeThings = [
-            'HTML5 Boilerplate',
-            'AngularJS',
-            'Karma'
-        ];
-
-        console.log("Author");
+    .controller('authorCtrl', function($scope) {
+    	$scope.websiteLink = "http://of-prose-and-poetry.com/#/";
+    	$scope.imageURL = "../images/madhuri_maitra.jpg";
     });

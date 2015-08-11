@@ -8,13 +8,12 @@
  * Controller of the madhuriMaitraApp
  */
 angular.module('madhuriMaitraApp')
-    .controller('eventsCtrl', function($scope, $http) {
-        
-        $scope.events = {};
-    
-        var url = '../properties/events.json';
+    .controller('eventsCtrl', function(eventsURL, $http, $scope) {
 
-        $http.get(url).then(function(response) {
-            $scope.events=response.data;
+        $scope.events = {};
+        $scope.quantity = 2;
+
+        $http.get(eventsURL).success(function(response) {
+            $scope.events = response;
         });
     });

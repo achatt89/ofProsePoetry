@@ -8,13 +8,12 @@
  * Controller of the madhuriMaitraApp
  */
 angular.module('madhuriMaitraApp')
-    .controller('otherPublicationsCtrl', function($scope,$http) {
-        
+    .controller('otherPublicationsCtrl', function(otherPublicationsURL, $scope, $http) {
+
         $scope.links = {};
 
-        var url = '../properties/publication.json';
-
-        $http.get(url).then(function(response) {
-            $scope.links = response.data;
+        $http.get(otherPublicationsURL).success(function(response) {
+        	$scope.links = response;
         });
+
     });

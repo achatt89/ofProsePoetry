@@ -76,7 +76,12 @@
                 if (data.$$route && data.$$route.controller)
                     $rootScope.controller = data.$$route.controller;
             })
-        });
+        })
+        .constant ('readuvenateURL', 'https://of-prose-and-poetry.firebaseio.com/readuvenate')
+        .constant ('otherPublicationsURL', '../properties/publication.json')
+        .constant ('haikuURL', '../properties/haiku.json')
+        .constant ('equinoxURL', '../properties/equinox.json')
+        .constant ('eventsURL', '../properties/events.json');
 
     bootstrapApplication();
     //fetchData();

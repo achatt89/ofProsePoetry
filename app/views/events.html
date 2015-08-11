@@ -1,22 +1,42 @@
 <div class="row">
-    The table lists below the event details with the upcoming events marked in green
+    CALENDAR 2014-2015
 </div>
 </br>
 <div class="row">
     <table class="table">
         <thead>
             <tr>
-                <th>Event</th>
+                <th class="widthFix">Happening / Forthcoming Events</th>
                 <th>Place</th>
                 <th>Date</th>
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="eventDetails in events | reverseAnything ">
-                <td ng-class='{success:$first}'>{{eventDetails.event}}</td>
-                <td ng-class='{success:$first}'>{{eventDetails.venue}}</td>
-                <td ng-class='{success:$first}'>{{eventDetails.date}}</td>
+            <tr ng-repeat="eventDetails in events | reverseAnything | limitTo:quantity  track by $index">
+                <td>{{eventDetails.event}}</td>
+                <td>{{eventDetails.venue}}</td>
+                <td>{{eventDetails.date}}</td>
             </tr>
         </tbody>
     </table>
 </div>
+</br>
+<div class="row">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Previous Events</th>
+                <th>Place</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="eventDetails in events | reverseAnything track by $index">
+                <td>{{eventDetails.event}}</td>
+                <td>{{eventDetails.venue}}</td>
+                <td>{{eventDetails.date}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

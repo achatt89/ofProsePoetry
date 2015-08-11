@@ -119,3 +119,6 @@ blockquote.equinoxBlockQuoteBorderColor:hover {
 .articleExcerptArea {
     width: 730px;
 }
+.widthFix {
+    width: 72%;
+}

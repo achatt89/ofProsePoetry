@@ -1,45 +1,53 @@
 [{
     "event": "Book Reading  -  Pagdandi Books Chai Café",
-    "venue":"Pune",
+    "venue": "Pune",
     "date": "April 2014"
 }, {
     "event": "Haiku and Micropoetry Workshop – Art Hop, Gyaan Adab",
-    "venue":"",
+    "venue": "Pune",
     "date": "April 2014"
 }, {
     "event": "Talking about Haiku and Micropoetry – Dignity Foundation",
-    "venue":"",
+    "venue": "Pune",
     "date": "April 2014"
 }, {
     "event": "Tuesdays with the Bard – Urban Solace",
-    "venue":"Banglore",
+    "venue": "Banglore",
     "date": "June 2014"
 }, {
     "event": "Micropoetry with Madhuri - Pune International Literary Festival",
-    "venue":"Pune",
+    "venue": "Pune",
     "date": "September 2014"
 }, {
     "event": "One Minute Theater - Pagdandi Books Chai Café",
-    "venue":"Pune",
+    "venue": "Pune",
     "date": "October 2014"
 }, {
+    "event": "Micropoetry Workshop @ Cosmic Gathering, Irish Village",
+    "venue": "Pune",
+    "date": "November 2014"
+}, {
     "event": "ELTIS National Conference – ELTIS",
-    "venue":"Pune",
+    "venue": "Pune",
     "date": "Jan 2015"
 }, {
     "event": "National Conference :English Language and Literature – Al Ameen College",
-    "venue":"Banglore",
+    "venue": "Banglore",
     "date": "March 2015"
 }, {
     "event": "Micropoetry with Madhuri  - workshop at Atta Galatta",
-    "venue":"Banglore",
+    "venue": "Banglore",
     "date": "March 2015"
 }, {
     "event": "Unrhymed with Madhuri – poetry workshop for children, E&F, Aundh",
-    "venue":"Pune",
+    "venue": "Pune",
     "date": "July 2015"
 }, {
-    "event": "Forthcoming – Blog Tour – Equinox",
-    "venue":"",
-    "date":"August 2015"
+    "event": "Happening - Blog Tour – Equinox",
+    "venue": "",
+    "date": "August 2015"
+}, {
+    "event": "Happening - Tornado Giveaway",
+    "venue": "",
+    "date": "August 2015"
 }]

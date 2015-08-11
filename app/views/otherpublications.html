@@ -10,7 +10,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="linkDetails in links">
+            <tr ng-repeat="linkDetails in links track by $index">
                 <td><a ng-href="{{linkDetails.link}}">{{linkDetails.link}}</a></td>
             </tr>
         </tbody>

@@ -18,8 +18,7 @@ angular.module('madhuriMaitraApp')
         $scope.readuvenate = $firebaseArray(firebaseURL);
         $scope.latestPost = $firebaseArray(ref);
 
-        $scope.archieveIndex = function(index) {
-            console.log(index);
+        $scope.archiveIndex = function(index) {
             $scope.articleIndex = index;
         }
     });

@@ -122,3 +122,12 @@ blockquote.equinoxBlockQuoteBorderColor:hover {
 .widthFix {
     width: 72%;
 }
+.iconSize {
+    font-size: 52px !important;
+}
+.facebookIcon {
+    color:  #3b5998 !important;
+}
+.twitterIcon {
+    color:  #00aced !important;
+}

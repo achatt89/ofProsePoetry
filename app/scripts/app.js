@@ -10,10 +10,6 @@
  */
     angular
         .module('madhuriMaitraApp', [
-            'ngAria',
-            'ngCookies',
-            'ngMessages',
-            'ngResource',
             'ngRoute',
             'ngSanitize',
             'wysiwyg.module',
@@ -56,6 +52,10 @@
                 .when('/editor', {
                     templateUrl: 'views/editor.html',
                     controller: 'editorCtrl'
+                })
+                .when ('/contactMe', {
+                    templateUrl: 'views/contactMe.html',
+                    controller: 'contactMeCtrl'
                 })
                 .otherwise({
                     redirectTo: '/'

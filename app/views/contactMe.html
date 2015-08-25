@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="col-md-12">
+        Contact Me:
+    </div>
+</div>
+</br>
+<div class="row">
+    <div class="col-md-1">
+        <a href="{{facebookURL}}">
+            <i class="fa fa-facebook-square iconSize facebookIcon"></i>
+        </a>
+    </div>
+    <div class="col-md-1">
+        <a href="{{twitterURL}}">
+            <i class="fa fa-twitter-square iconSize twitterIcon"></i>
+        </a>
+    </div>
+</div>
+</br>
+<div class="row">
+    <div class="col-md-12">
+        <form class="form-horizontal" name="form.contactForm" novalidate>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="txtName" placeholder="Enter Your Name" name="name" ng-model="contactForm.name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <input type="email" class="form-control" id="txtEmail" placeholder="abc@someone.com" name="email" ng-model="contactForm.email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="txtSubject" placeholder="Email Subject" name="subject" ng-model="contactForm.subject" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <textarea rows="10" class="form-control" id="txtMessage" placeholder="Your Message" name="message" ng-model="contactForm.message" required></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10" ng-if="contactFormError"> Please fill all the details </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <button type="submit" class="btn btn-default" ng-click="send()">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

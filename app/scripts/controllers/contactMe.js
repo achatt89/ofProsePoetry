@@ -8,33 +8,61 @@
  * Controller of the madhuriMaitraApp
  */
 angular.module('madhuriMaitraApp')
-  .controller('contactMeCtrl', function ($scope, mailService) {
-  		$scope.form = {};
-  		$scope.contactForm = {};
-  		$scope.contactFormError = false;
+    .controller('contactMeCtrl', function($scope, $http) {
+        $scope.form = {};
+        $scope.contactForm = {};
+        $scope.mailDeliveredMsg = '';
+        $scope.mailDelivered = false;
+        $scope.mailDeliveredStatus = false;
 
-  		$scope.facebookURL = 'https://www.facebook.com/madhuri.unrhymed';
-  		$scope.twitterURL = 'https://twitter.com/madhuri_maitra';
-  		$scope.emailAddress = 'madhurimaitra2008@gmail.com';
+        $scope.facebookURL = 'https://www.facebook.com/madhuri.unrhymed';
+        $scope.twitterURL = 'https://twitter.com/madhuri_maitra';
+        $scope.contactForm.to = 'madhurimaitra2008@gmail.com';
 
-  		$scope.send = function () {
-  			if ($scope.form.contactForm.$invalid === true) {
-  				$scope.contactFormError = true;
-  			}
-  			else {
-  				$scope.contactFormError = false;
-  				console.log ($scope.contactForm);
+        $scope.send = function() {
+            if ($scope.form.contactForm.$invalid === true) {
+                $scope.mailDelivered = true;
+                $scope.mailDeliveredStatus = false;
+                $scope.mailDeliveredMsg = 'Error! Please fill all the fields..';
+            } else {
+                $http({
+                    method: 'POST',
+                    url: '../scripts/php/mail.php',
+                    data: $.param($scope.contactForm),
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+                    }
+                }).success(function(data, status, headers, config) {
+                    if (data) {
+                        $scope.mailDelivered = true;
+                        $scope.mailDeliveredStatus = true;
+                        $scope.mailDeliveredMsg = 'Email sent successfully. Thank you for contacting.';
+                        setPristine();
+                    } else {
+                        $scope.mailDelivered = true;
+                        $scope.mailDeliveredStatus = false;
+                        $scope.mailDeliveredMsg = 'Error! Please try again after sometime. Sorry for inconvenience.';
+                    }
+                }).error(function(data, status) {
+                    $scope.mailDelivered = true;
+                    $scope.mailDeliveredStatus = false;
+                    $scope.mailDeliveredMsg = 'Error! Please try again after sometime. Sorry for inconvenience.';
+                });
 
-          var to = $scope.emailAddress;
-          var from = $scope.contactForm.email;
-          var subject = $scope.contactForm.subject;
-          var message = $scope.contactForm.message;
+            }
 
-          $scope.mailStatus = mailService.sendMail(to,from,subject,message);
+        };
 
-          console.log ("TADAA", $scope.mailStatus);
+        if (($scope.form.$dirty || $scope.form.$touched) && ($scope.mailDelivered === true))
+        {
+          $scope.mailDelivered = false;
+          $scope.mailDeliveredStatus = false;
+          $scope.mailDeliveredMsg = '';
+        }
 
-  			}
-  		
-  		}
-  });
+        var setPristine = function() {
+          $scope.form.contactForm.$setPristine();
+          $scope.contactForm = {};
+        };
+
+    });

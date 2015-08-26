@@ -4,11 +4,18 @@ angular.module('madhuriMaitraApp')
         var factory = {}
 
         factory.sendMail = function(to, from, subject, message) {
-            $http.post('../scripts/php/mail.php', {
-                'to': to,
-                'from': from,
-                'subject': subject,
-                'message': message
+            $http({
+                method: 'POST',
+                url: '../scripts/php/mail.php',
+                data: {
+                    'to': to,
+                    'from': from,
+                    'subject': subject,
+                    'message': message
+                },
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+                }
             }).success(function(data, status, headers, config) {
                 if (data.msg != '') {
                     return status;

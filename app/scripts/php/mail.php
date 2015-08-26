@@ -1,9 +1,11 @@
 <?php
     $data = json_decode(file_get_contents("php://input"));
-    $to = mysql_real_escape_string($data->to);
-    $from = "From: " . mysql_real_escape_string($data->from) . "\r\n";
-    $message = mysql_real_escape_string($data->message);
-    $subject = mysql_real_escape_string($data->subject);
+    $to = $_REQUEST['to'];
+    $from = "From: " . $_REQUEST['email'] . "\r\n";
+    $message = $_REQUEST['message'];
+    $subject = $_REQUEST['subject'];
 
-mail($to, $subject,$message, $from);
+$response = mail($to, $subject,$message, $from);
+
+echo $response;
 ?>

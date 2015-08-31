@@ -2,18 +2,16 @@
 
 /**
  * @ngdoc function
- * @name madhuriMaitraApp.controller:AboutCtrl
+ * @name ofProsePoetryApp.controller:OtherpublicationsCtrl
  * @description
- * # AboutCtrl
- * Controller of the madhuriMaitraApp
+ * # OtherpublicationsCtrl
+ * Controller of the ofProsePoetryApp
  */
-angular.module('madhuriMaitraApp')
-    .controller('otherPublicationsCtrl', function(otherPublicationsURL, $scope, $http) {
-
+angular.module('ofProsePoetryApp')
+    .controller('OtherpublicationsCtrl', function(otherPublicationsURL, $scope, $http) {
         $scope.links = {};
 
         $http.get(otherPublicationsURL).success(function(response) {
-        	$scope.links = response;
+            $scope.links = response;
         });
-
     });

@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name madhuriMaitraApp.controller:AboutCtrl
+ * @name ofProsePoetryApp.controller:ReaduvenateCtrl
  * @description
- * # AboutCtrl
- * Controller of the madhuriMaitraApp
+ * # ReaduvenateCtrl
+ * Controller of the ofProsePoetryApp
  */
-angular.module('madhuriMaitraApp')
-    .controller('readuvenateCtrl', function($scope, $firebaseArray) {
+angular.module('ofProsePoetryApp')
+    .controller('ReaduvenateCtrl', function($scope, $firebaseArray) {
 
         $scope.events = {};
         $scope.articleIndex;
@@ -22,3 +22,4 @@ angular.module('madhuriMaitraApp')
             $scope.articleIndex = index;
         }
     });
+

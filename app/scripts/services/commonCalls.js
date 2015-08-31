@@ -1,6 +1,14 @@
 'use strict';
-angular.module('madhuriMaitraApp')
-    .factory('commonCalls', function(readuvenateURL, haikuURL, equinoxURL, eventsURL, otherPublicationsURL, $http, $firebaseArray) {
+
+/**
+ * @ngdoc service
+ * @name ofProsePoetryApp.commonCalls
+ * @description
+ * # commonCalls
+ * Factory in the ofProsePoetryApp.
+ */
+angular.module('ofProsePoetryApp')
+  .factory('commonCalls', function(readuvenateURL, haikuURL, equinoxURL, eventsURL, otherPublicationsURL, $http, $firebaseArray) {
         var factory = {}
 
         function getRandomInt(min, max) {
@@ -57,3 +65,4 @@ angular.module('madhuriMaitraApp')
         return factory;
 
     });
+

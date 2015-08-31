@@ -2,12 +2,11 @@
 
 /**
  * @ngdoc function
- * @name madhuriMaitraApp.controller:AboutCtrl
+ * @name ofProsePoetryApp.controller:BooksCtrl
  * @description
- * # AboutCtrl
- * Controller of the madhuriMaitraApp
+ * # BooksCtrl
+ * Controller of the ofProsePoetryApp
  */
-angular.module('madhuriMaitraApp')
-  .controller('booksCtrl', function ($scope) {
-   
+angular.module('ofProsePoetryApp')
+  .controller('BooksCtrl', function () {
   });

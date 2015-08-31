@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name madhuriMaitraApp.controller:AboutCtrl
+ * @name ofProsePoetryApp.controller:ContactmeCtrl
  * @description
- * # AboutCtrl
- * Controller of the madhuriMaitraApp
+ * # ContactmeCtrl
+ * Controller of the ofProsePoetryApp
  */
-angular.module('madhuriMaitraApp')
-    .controller('contactMeCtrl', function($scope, $http) {
+angular.module('ofProsePoetryApp')
+  .controller('ContactMeCtrl', function($scope, $http) {
         $scope.form = {};
         $scope.contactForm = {};
         $scope.mailDeliveredMsg = '';

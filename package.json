@@ -1,11 +1,10 @@
 {
-  "name": "madhurimaitra",
-  "version": "0.0.0",
-  "dependencies": {},
-  "repository": {},
+  "name": "ofprosepoetry",
+  "private": true,
   "devDependencies": {
     "angularfire": "^1.1.2",
     "grunt": "^0.4.5",
+    "grunt-angular-templates": "^0.5.7",
     "grunt-autoprefixer": "^2.0.0",
     "grunt-concurrent": "^1.0.0",
     "grunt-contrib-clean": "^0.6.0",
@@ -19,7 +18,6 @@
     "grunt-contrib-uglify": "^0.7.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-filerev": "^2.1.2",
-    "grunt-ftp-deploy": "^0.1.10",
     "grunt-google-cdn": "^0.4.3",
     "grunt-karma": "*",
     "grunt-newer": "^1.1.0",
@@ -27,10 +25,10 @@
     "grunt-svgmin": "^2.0.0",
     "grunt-usemin": "^3.0.0",
     "grunt-wiredep": "^2.0.0",
+    "jit-grunt": "^0.9.1",
     "jshint-stylish": "^1.0.0",
     "karma-jasmine": "*",
     "karma-phantomjs-launcher": "*",
-    "load-grunt-tasks": "^3.1.0",
     "time-grunt": "^1.0.0"
   },
   "engines": {

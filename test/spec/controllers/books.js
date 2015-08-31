@@ -1,23 +1,23 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: BooksCtrl', function () {
 
   // load the controller's module
   beforeEach(module('ofProsePoetryApp'));
 
-  var MainCtrl,
+  var BooksCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
+    BooksCtrl = $controller('BooksCtrl', {
       $scope: scope
       // place here mocked dependencies
     });
   }));
 
   it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(3);
+    expect(BooksCtrl.awesomeThings.length).toBe(3);
   });
 });

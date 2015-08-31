@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name madhuriMaitraApp.controller:AboutCtrl
+ * @name ofProsePoetryApp.controller:EventsCtrl
  * @description
- * # AboutCtrl
- * Controller of the madhuriMaitraApp
+ * # EventsCtrl
+ * Controller of the ofProsePoetryApp
  */
-angular.module('madhuriMaitraApp')
-    .controller('eventsCtrl', function(eventsURL, $http, $scope) {
+angular.module('ofProsePoetryApp')
+    .controller('EventsCtrl', function(eventsURL, $http, $scope) {
 
         $scope.events = {};
         $scope.quantity = 2;

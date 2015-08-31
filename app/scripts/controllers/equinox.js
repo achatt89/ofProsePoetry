@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name madhuriMaitraApp.controller:AboutCtrl
+ * @name ofProsePoetryApp.controller:EquinoxCtrl
  * @description
- * # AboutCtrl
- * Controller of the madhuriMaitraApp
+ * # EquinoxCtrl
+ * Controller of the ofProsePoetryApp
  */
-angular.module('madhuriMaitraApp')
-    .controller('equinoxCtrl', function(commonCalls, $scope) {
+angular.module('ofProsePoetryApp')
+    .controller('EquinoxCtrl', function(commonCalls, $scope) {
 
         $scope.equinox = {};
 
@@ -16,4 +16,4 @@ angular.module('madhuriMaitraApp')
         $scope.amazonLink = "http://www.amazon.in/Equinox-Madhuri-Maitra/dp/1482816806/ref=sr_1_1?s=books&ie=UTF8&qid=1405488548&sr=1-1&keywords=equinox";
         
         $scope.equinox = commonCalls.equinox();
-    });
+  });

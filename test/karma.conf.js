@@ -1,6 +1,6 @@
 // Karma configuration
 // http://karma-runner.github.io/0.12/config/configuration-file.html
-// Generated on 2015-07-16 using
+// Generated on 2015-08-31 using
 // generator-karma 1.0.0
 
 module.exports = function(config) {
@@ -26,8 +26,6 @@ module.exports = function(config) {
       'bower_components/angular/angular.js',
       'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/angular-aria/angular-aria.js',
-      'bower_components/angular-cookies/angular-cookies.js',
-      'bower_components/angular-messages/angular-messages.js',
       'bower_components/angular-resource/angular-resource.js',
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
@@ -36,8 +34,6 @@ module.exports = function(config) {
       'bower_components/firebase/firebase.js',
       'bower_components/angularfire/dist/angularfire.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'bower_components/angular-strap/dist/angular-strap.js',
-      'bower_components/angular-strap/dist/angular-strap.tpl.js',
       // endbower
       "app/scripts/**/*.js",
       "test/mock/**/*.js",

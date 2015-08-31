@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name madhuriMaitraApp.controller:AboutCtrl
+ * @name ofProsePoetryApp.controller:EditorCtrl
  * @description
- * # AboutCtrl
- * Controller of the madhuriMaitraApp
+ * # EditorCtrl
+ * Controller of the ofProsePoetryApp
  */
-angular.module('madhuriMaitraApp')
-    .controller('editorCtrl', function($scope, $http, $firebaseArray) {
+angular.module('ofProsePoetryApp')
+    .controller('EditorCtrl', function($scope, $http, $firebaseArray) {
 
         $scope.wysiwygBody;
         $scope.wysiwygTitle;

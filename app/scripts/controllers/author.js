@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name madhuriMaitraApp.controller:AboutCtrl
+ * @name ofProsePoetryApp.controller:AuthorCtrl
  * @description
- * # AboutCtrl
- * Controller of the madhuriMaitraApp
+ * # AuthorCtrl
+ * Controller of the ofProsePoetryApp
  */
-angular.module('madhuriMaitraApp')
-    .controller('authorCtrl', function($scope) {
+angular.module('ofProsePoetryApp')
+  .controller('AuthorCtrl', function($scope) {
     	$scope.websiteLink = "http://of-prose-and-poetry.com/#/";
     	$scope.imageURL = "../images/madhuri_maitra.jpg";
     });

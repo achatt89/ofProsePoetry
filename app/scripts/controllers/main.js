@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name madhuriMaitraApp.controller:MainCtrl
+ * @name ofProsePoetryApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the madhuriMaitraApp
+ * Controller of the ofProsePoetryApp
  */
-angular.module('madhuriMaitraApp')
-    .controller('mainCtrl', function(commonCalls, $scope) {
+angular.module('ofProsePoetryApp')
+  .controller('MainCtrl', function(commonCalls, $scope) {
 
         $scope.readuvenate = {};
         $scope.haiku = {};
@@ -22,4 +22,4 @@ angular.module('madhuriMaitraApp')
         $scope.equinox = commonCalls.equinox();
 
         $scope.eventsDetails = commonCalls.latestEvent();
-    }); 
+  });

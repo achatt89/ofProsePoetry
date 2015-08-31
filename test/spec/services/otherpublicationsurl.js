@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: otherPublicationsURL', function () {
+describe('Constant: otherPublicationsURL', function () {
 
   // load the service's module
   beforeEach(module('ofProsePoetryApp'));
@@ -11,8 +11,8 @@ describe('Service: otherPublicationsURL', function () {
     otherPublicationsURL = _otherPublicationsURL_;
   }));
 
-  it('should do something', function () {
-    expect(!!otherPublicationsURL).toBe(true);
+  it('otherPublicationsURL constant should return URL: ../properties/publication.json', function () {
+    expect(otherPublicationsURL).toBe('../properties/publication.json');
   });
 
 });

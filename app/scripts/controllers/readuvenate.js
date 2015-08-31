@@ -20,6 +20,6 @@ angular.module('ofProsePoetryApp')
 
         $scope.archiveIndex = function(index) {
             $scope.articleIndex = index;
-        }
+        };
     });
 

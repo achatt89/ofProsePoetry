@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: readuvenateURL', function () {
+describe('Constant: readuvenateURL', function () {
 
   // load the service's module
   beforeEach(module('ofProsePoetryApp'));
@@ -11,8 +11,8 @@ describe('Service: readuvenateURL', function () {
     readuvenateURL = _readuvenateURL_;
   }));
 
-  it('should do something', function () {
-    expect(!!readuvenateURL).toBe(true);
+  it('readuvenateURL constant should return URL: https://of-prose-and-poetry.firebaseio.com/readuvenate', function () {
+    expect(readuvenateURL).toBe('https://of-prose-and-poetry.firebaseio.com/readuvenate');
   });
 
 });

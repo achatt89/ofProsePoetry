@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: eventsURL', function () {
+describe('Constant: eventsURL', function () {
 
   // load the service's module
   beforeEach(module('ofProsePoetryApp'));
@@ -11,8 +11,8 @@ describe('Service: eventsURL', function () {
     eventsURL = _eventsURL_;
   }));
 
-  it('should do something', function () {
-    expect(!!eventsURL).toBe(true);
+  it('eventsURL constant should return URL: ../properties/events.json', function () {
+    expect(eventsURL).toBe('../properties/events.json');
   });
 
 });

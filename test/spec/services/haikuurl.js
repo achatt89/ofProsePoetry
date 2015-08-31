@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: haikuURL', function () {
+describe('Constant: haikuURL', function () {
 
   // load the service's module
   beforeEach(module('ofProsePoetryApp'));
@@ -11,8 +11,8 @@ describe('Service: haikuURL', function () {
     haikuURL = _haikuURL_;
   }));
 
-  it('should do something', function () {
-    expect(!!haikuURL).toBe(true);
+  it('haikuURL constant should return URL: ../properties/haiku.json', function () {
+    expect(haikuURL).toBe('../properties/haiku.json');
   });
 
 });

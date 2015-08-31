@@ -9,12 +9,12 @@
  */
 angular.module('ofProsePoetryApp')
   .factory('commonCalls', function(readuvenateURL, haikuURL, equinoxURL, eventsURL, otherPublicationsURL, $http, $firebaseArray) {
-        var factory = {}
+        var factory = {};
 
         function getRandomInt(min, max) {
             var returnVal = Math.floor(Math.random() * (max - min + 1)) + min;
             return returnVal;
-        };
+        }
 
         factory.readuvenate = function() {
             var firebaseURL = new Firebase(readuvenateURL);

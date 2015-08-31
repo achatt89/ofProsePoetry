@@ -19,9 +19,10 @@ angular
     ])
     .run(function($rootScope) {
         $rootScope.$on('$routeChangeSuccess', function(ev, data) {
-            if (data.$$route && data.$$route.controller)
+            if (data.$$route && data.$$route.controller) {
                 $rootScope.controller = data.$$route.controller;
-        })
+            }
+        });
     })
     .config(function($routeProvider) {
         $routeProvider

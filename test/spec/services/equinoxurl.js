@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: equinoxURL', function () {
+describe('Constant: equinoxURL', function () {
 
   // load the service's module
   beforeEach(module('ofProsePoetryApp'));
@@ -11,8 +11,8 @@ describe('Service: equinoxURL', function () {
     equinoxURL = _equinoxURL_;
   }));
 
-  it('should do something', function () {
-    expect(!!equinoxURL).toBe(true);
+  it('equinoxURL constant should return URL: ../properties/equinox.json', function () {
+    expect(equinoxURL).toBe('../properties/equinox.json');
   });
 
 });

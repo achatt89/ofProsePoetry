@@ -32,7 +32,7 @@ angular.module('ofProsePoetryApp')
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
                     }
-                }).success(function(data, status, headers, config) {
+                }).success(function(data) {
                     if (data) {
                         $scope.mailDelivered = true;
                         $scope.mailDeliveredStatus = true;
@@ -43,7 +43,7 @@ angular.module('ofProsePoetryApp')
                         $scope.mailDeliveredStatus = false;
                         $scope.mailDeliveredMsg = 'Error! Please try again after sometime. Sorry for inconvenience.';
                     }
-                }).error(function(data, status) {
+                }).error(function() {
                     $scope.mailDelivered = true;
                     $scope.mailDeliveredStatus = false;
                     $scope.mailDeliveredMsg = 'Error! Please try again after sometime. Sorry for inconvenience.';

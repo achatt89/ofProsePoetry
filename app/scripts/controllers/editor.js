@@ -39,7 +39,7 @@ angular.module('ofProsePoetryApp')
         $scope.messages = $firebaseArray(firebaseURL);
 
         $scope.submit = function() {
-            if (($scope.wysiwygTitle != null) || ($scope.wysiwygBody != null) || ($scope.articleExcerpt != null)) {
+            if (($scope.wysiwygTitle !== null) || ($scope.wysiwygBody !== null) || ($scope.articleExcerpt !== null)) {
                 $scope.messages.$add({
                     title: $scope.wysiwygTitle,
                     excerpt: $scope.articleExcerpt,
@@ -53,5 +53,5 @@ angular.module('ofProsePoetryApp')
             else {
                 $("#errorModal").modal();
             }
-        }
+        };
     });

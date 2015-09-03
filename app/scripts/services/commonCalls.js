@@ -8,7 +8,7 @@
  * Factory in the ofProsePoetryApp.
  */
 angular.module('ofProsePoetryApp')
-  .factory('commonCalls', function(readuvenateURL, haikuURL, equinoxURL, eventsURL, otherPublicationsURL, $http, $firebaseArray) {
+    .factory('commonCalls', function(readuvenateURL, haikuURL, equinoxURL, eventsURL, otherPublicationsURL, $http, $firebaseArray) {
         var factory = {};
 
         function getRandomInt(min, max) {
@@ -62,7 +62,24 @@ angular.module('ofProsePoetryApp')
             return eventDetails;
         };
 
+        factory.newsLetterSignUp = function(emailAddress) {
+            var firebaseURL = new Firebase("https://of-prose-and-poetry.firebaseio.com/newsLetter");
+            var ref = $firebaseArray(firebaseURL);
+
+            console.log(ref);
+
+            for (var i = 0; i < ref.length; i++) {
+                if (ref[i].email === emailAddress) {
+                    console.log("DONT DO IT MAN!!!");
+                } else {
+                    ref.$add({
+                        email: emailAddress
+                    });
+                }
+            }
+
+        };
+
         return factory;
 
     });
-

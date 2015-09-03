@@ -10,6 +10,8 @@
 angular.module('ofProsePoetryApp')
   .controller('MainCtrl', function(commonCalls, $scope) {
 
+        var counter = 0;
+
         $scope.readuvenate = {};
         $scope.haiku = {};
         $scope.equinox;
@@ -22,4 +24,8 @@ angular.module('ofProsePoetryApp')
         $scope.equinox = commonCalls.equinox();
 
         $scope.eventsDetails = commonCalls.latestEvent();
+
+        $scope.newsLetter = function() {
+            commonCalls.newsLetterSignUp($scope.newsLetterSignUp);
+        };
   });

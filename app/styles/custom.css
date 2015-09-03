@@ -116,18 +116,35 @@ blockquote.equinoxBlockQuoteBorderColor:hover {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px !important;
 }
+
 .articleExcerptArea {
     width: 730px;
 }
+
 .widthFix {
     width: 72%;
 }
+
 .iconSize {
     font-size: 52px !important;
 }
+
 .facebookIcon {
-    color:  #3b5998 !important;
+    color: #3b5998 !important;
 }
+
 .twitterIcon {
-    color:  #00aced !important;
+    color: #00aced !important;
+}
+
+.jumbotronBtnDesign {
+    font-size: 14px !important;
+    padding: 6px 22px !important;
+}
+
+.newsLetterDisclaimer {
+    text-align: justify;
+    width: 83%;
+    color: #777777;
+    font-size: 12px;
 }

@@ -49,4 +49,21 @@
             </blockquote>
         </a>
     </p>
+    <br/>
+    <p class="align-center"><u>Sign For Upcoming Newsletter</u></p>
+    <p class="align-center">
+        <form class="form-horizontal" name="form.newsLetterForm" novalidate>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <input type="email" class="form-control" ng-model="newsLetterSignUp" name="newsLetterEmail" placeholder="Enter your email address" required>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-warning jumbotronBtnDesign" ng-click="newsLetter()" ng-disabled="newsLetterEmail.invalid">Submit</button>
+                </div>
+            </div>
+        </form>
+    </p>
+    <p class="align-left">
+        <div class="newsLetterDisclaimer"><i>Disclaimer:</i> The email address will be used to keep you updated with new articles & upcoming events. It won't be used for any marketing purpose other than mentioned above.</div>
+    </p>
 </div>

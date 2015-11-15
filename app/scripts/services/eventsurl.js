@@ -8,4 +8,4 @@
  * Constant in the ofProsePoetryApp.
  */
 angular.module('ofProsePoetryApp')
-  .constant('eventsURL', '../properties/events.json');
+  .constant('eventsURL', 'https://of-prose-and-poetry.firebaseio.com/events');

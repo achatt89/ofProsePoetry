@@ -66,6 +66,14 @@ angular
                 templateUrl: 'views/readuvenate.html',
                 controller: 'ReaduvenateCtrl'
             })
+            .when('/eventsEditor/eventsEditor', {
+              templateUrl: 'views/eventsEditor/eventsEditor.html',
+              controller: 'EventsEditorCtrl'
+            })
+            .when('/eventsEditor/eventsCreator', {
+              templateUrl: 'views/eventsEditor/eventsCreator.html',
+              controller: 'EventsCreatorCtrl'
+            })
             .otherwise({
                 redirectTo: '/'
             });

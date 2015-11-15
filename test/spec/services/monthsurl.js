@@ -1,18 +1,18 @@
 'use strict';
 
-describe('Service: eventsURL', function () {
+describe('Service: monthsURL', function () {
 
   // load the service's module
   beforeEach(module('ofProsePoetryApp'));
 
   // instantiate service
-  var eventsURL;
-  beforeEach(inject(function (_eventsURL_) {
-    eventsURL = _eventsURL_;
+  var monthsURL;
+  beforeEach(inject(function (_monthsURL_) {
+    monthsURL = _monthsURL_;
   }));
 
   it('should do something', function () {
-    expect(!!eventsURL).toBe(true);
+    expect(!!monthsURL).toBe(true);
   });
 
 });

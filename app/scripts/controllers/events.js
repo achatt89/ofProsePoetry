@@ -8,12 +8,12 @@
  * Controller of the ofProsePoetryApp
  */
 angular.module('ofProsePoetryApp')
-    .controller('EventsCtrl', function(eventsURL, $http, $scope) {
+    .controller('EventsCtrl', function(eventsURL, $scope, $firebaseArray) {
 
         $scope.events = {};
-        $scope.quantity = 2;
 
-        $http.get(eventsURL).success(function(response) {
-            $scope.events = response;
-        });
+        var firebaseURL = new Firebase(eventsURL);
+        $scope.events = $firebaseArray(firebaseURL);
+
+        console.log($scope.events);
     });

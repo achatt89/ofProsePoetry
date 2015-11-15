@@ -124,6 +124,12 @@ blockquote.equinoxBlockQuoteBorderColor:hover {
 .widthFix {
     width: 72%;
 }
+.eventTypeWidthFix {
+    width: 15%;
+}
+.dateWidthFix {
+    width: 17%;
+}
 
 .iconSize {
     font-size: 52px !important;
